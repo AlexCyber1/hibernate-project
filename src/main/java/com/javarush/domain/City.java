@@ -1,8 +1,12 @@
 package com.javarush.domain;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
 @Table(schema = "world", name = "city")
 public class City {
     @Id
